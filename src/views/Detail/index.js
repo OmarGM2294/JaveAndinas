@@ -33,9 +33,9 @@ const Detail = ({route, navigation}) => {
 
   const sendMessage = () => {
     let url =
-      'whatsapp://send?text=Quiero averiguar sobre:' +
+      'whatsapp://send?text=¡Hola!, Me gustaria averiguar sobre: ' +
       item.text +
-      '&phone=573152163850';
+      ' ,porfavor&phone=573017874295';
     Linking.openURL(url)
       .then((data) => {
         console.log('WhatsApp Opened successfully ' + data);

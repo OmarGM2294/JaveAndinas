@@ -2,7 +2,7 @@ import * as React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconM from 'react-native-vector-icons/MaterialIcons';
 
-import {View, Text, Image} from 'react-native';
+import {View, Image, Linking, TouchableOpacity} from 'react-native';
 
 import {colors} from '../../styles/base';
 
@@ -13,6 +13,7 @@ import viewStyles from './styles';
 
 const HomeScreen = ({navigation}) => {
   const keys = Object.keys(colors);
+  ['white', 'background', 'platinum'].forEach(color => keys.splice(keys.indexOf(color), 1));
   const data = [
     {
       press: () => navigation.push('Products'),
@@ -34,6 +35,16 @@ const HomeScreen = ({navigation}) => {
     },
   ];
   const cards = data.map((card, index) => <Card card={card} key={index} />);
+  const openLink = (url) => {
+    Linking.openURL(url)
+      .then((data) => {
+        console.log('Opened successfully ' + data);
+      })
+      .catch(() => {
+        // eslint-disable-next-line no-alert
+        alert('Error, intentalo de nuevo mas tarde');
+      });
+  }
   return (
     <View style={viewStyles.main}>
       <View style={viewStyles.logoContainer}>
@@ -41,6 +52,17 @@ const HomeScreen = ({navigation}) => {
           style={viewStyles.logo}
           source={require('../../assets/img/logo.png')}
         />
+      </View>
+      <View style={viewStyles.socialContainer}>
+        <TouchableOpacity onPress={() => openLink('https://www.facebook.com/javeandinastutorias')}>
+          <Icon name="facebook" size={40} color={colors.facebook} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => openLink('https://www.instagram.com/tutorias_javeandinas/')}>
+          <Icon name="instagram" size={40} color={colors.instagram} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => openLink('whatsapp://send?phone=573017874295')}>
+          <Icon name="whatsapp" size={40} color={colors.whatsapp} />
+        </TouchableOpacity>
       </View>
       <View style={viewStyles.buttonContainer}>
         <View style={commonStyles.container}>{cards}</View>

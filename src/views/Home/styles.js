@@ -12,7 +12,7 @@ const panelStyles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    backgroundColor: colors.primary,
+    backgroundColor: colors.background,
     display: 'flex',
     flex: 2,
     justifyContent: 'center',
@@ -29,6 +29,12 @@ const panelStyles = StyleSheet.create({
   },
   logoText: {
     color: colors.white,
+  },
+  socialContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
   },
 });
 

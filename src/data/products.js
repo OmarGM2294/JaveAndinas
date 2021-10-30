@@ -165,14 +165,14 @@ const data = (navigation) => [
     colorText: colors.white,
     text: 'Diseño y desarrollo de maquinaria',
     description: 
-      `En Javeandinas nos especializamos en el diseño y desarrollo de
-      maquinaria especializada o a nivel industrial, a medida de las
-      necesidades de los procesos productivos de los clientes.
-      En cada uno de nuestros procesos buscamos el éxito y la calidad para
-      aquellos experimentos que se consideran poco posibles. Diseñándose
-      la solución de máquinas especiales requerida. 
-      ¿Quieres conocer más en profundidad cuál es el proceso de diseño de
-      maquinaria industrial de calidad que sigue nuestro equipo?`,
+      'En Javeandinas nos especializamos en el diseño y desarrollo de\n' +
+      'maquinaria especializada o a nivel industrial, a medida de las\n' +
+      'necesidades de los procesos productivos de los clientes.\n\n' +
+      'En cada uno de nuestros procesos buscamos el éxito y la calidad para\n' +
+      'aquellos experimentos que se consideran poco posibles. Diseñándose\n' +
+      'la solución de máquinas especiales requerida.\n\n' +
+      '¿Quieres conocer más en profundidad cuál es el proceso de diseño de\n' +
+      'maquinaria industrial de calidad que sigue nuestro equipo?',
     images: [
       {
         type: 'image',
@@ -197,6 +197,18 @@ const data = (navigation) => [
       {
         type: 'image',
         data: require('../assets/img/maquinaria/6.png'),
+      },
+      {
+        type: 'image',
+        data: require('../assets/img/maquinaria/7.jpeg'),
+      },
+      {
+        type: 'image',
+        data: require('../assets/img/maquinaria/8.jpeg'),
+      },
+      {
+        type: 'image',
+        data: require('../assets/img/maquinaria/9.jpeg'),
       },
     ],
   },

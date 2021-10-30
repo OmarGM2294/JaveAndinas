@@ -13,12 +13,14 @@ export const colors = {
   cinnabar: '#e53935',
   cosmetics: '#fe79b2',
   error: '#FF0000',
+  facebook: '#3b5998',
   fruit_salad: '#4caf50',
   gold: '#D4AF37',
   gorse: '#ffeb3b',
   health: '#569099',
   hot_pink: '#ff4fa5',
   indigo: '#3E4CC5',
+  instagram: '#E1306C',
   nobel: '#b5b5b5',
   orange: '#ff5722',
   orange_peel: '#ff9800',
@@ -35,6 +37,7 @@ export const colors = {
   secondary: '#ffeb3b',
   sushi: '#8bc34a',
   theater: '#d06f4c',
+  whatsapp: '#075e54',
   white: '#fff',
 };
 
