@@ -9,6 +9,7 @@ export const colors = {
   amber: '#ffc107',
   amaranth: '#d81b60',
   background: '#f2f2f2',
+  black: '#000000',
   cerulean: '#03a9f4',
   cinnabar: '#e53935',
   cosmetics: '#fe79b2',

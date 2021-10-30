@@ -13,6 +13,7 @@ import MedicalDevicesScreen from './src/views/MedicalDevices';
 import DetailScreen from './src/views/Detail';
 import DiagnosticScreen from './src/views/Diagnostic';
 import PlasticsScreen from './src/views/Plastics';
+import SmileScreen from './src/views/Smile';
 
 const Stack = createStackNavigator();
 
@@ -69,6 +70,11 @@ export default function App() {
           name="Plastics"
           component={PlasticsScreen}
           options={{title: 'Plasticos'}}
+        />
+        <Stack.Screen
+          name="Smile"
+          component={SmileScreen}
+          options={({route}) => ({title: 'Diagnostico JaveSonrisas'})}
         />
       </Stack.Navigator>
     </NavigationContainer>

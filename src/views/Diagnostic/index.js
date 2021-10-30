@@ -1,7 +1,7 @@
 import * as React from 'react';
 import RNPickerSelect from 'react-native-picker-select';
 
-import {SafeAreaView, ScrollView, View, TextInput, Text} from 'react-native';
+import {SafeAreaView, ScrollView, View, TextInput, Text, Linking} from 'react-native';
 import {ProgressSteps, ProgressStep} from 'react-native-progress-steps';
 
 import commonStyles from '../../styles/common';
@@ -29,7 +29,6 @@ const Diagnostic = ({navigation}) => {
     first: '',
     type: '',
     description: '',
-    syntoms: [],
     contact: '',
   });
 
@@ -45,6 +44,37 @@ const Diagnostic = ({navigation}) => {
     } else {
       setErrors(true);
     }
+  };
+
+  const onSubmit = () => {
+    let url =
+      `whatsapp://send?text=Nuevo diagnostico solicitado:
+      Prefijo: ${data.prefix}
+      Nombre Completo: ${data.name} ${data.middlename} ${data.lastname}
+      Genero: ${data.gender}
+      Tipo de sangre: ${encodeURIComponent(data.blood_type)}
+      Edad: ${data.age}
+      Tipo de documento: ${data.doc_type}
+      Numero de documento: ${data.doc}
+      Telefono Fijo: ${data.phone}
+      Celular: ${data.cel}
+      Correo: ${data.email}
+      Ciudad: ${data.city}
+      Barrio: ${data.neighborhood}
+      Direccion: ${data.address}
+      ¿Primera vez, referido o paciente?: ${data.first}
+      Tipo de consulta: ${data.type}
+      Motivo de consulta: ${data.description}
+      Contacto con alguien que tenga esos sintomas: ${data.contact}
+      &phone=573017874295`;
+    Linking.openURL(url)
+      .then((data) => {
+        console.log('WhatsApp Opened successfully ' + data);
+      })
+      .catch(() => {
+        // eslint-disable-next-line no-alert
+        alert('Make sure WhatsApp installed on your device');
+      });
   };
 
   const progressStepsStyle = {
@@ -109,6 +139,7 @@ const Diagnostic = ({navigation}) => {
                   value={data.prefix}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                 />
                 <Text style={[styles.label, errors ? styles.errorLabel : null]}>
                   Nombre
@@ -152,6 +183,7 @@ const Diagnostic = ({navigation}) => {
                   ]}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                   value={data.gender}
                 />
                 <Text style={[styles.label, errors ? styles.errorLabel : null]}>
@@ -177,6 +209,7 @@ const Diagnostic = ({navigation}) => {
                   ]}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                   value={data.blood_type}
                 />
                 <Text style={[styles.label, errors ? styles.errorLabel : null]}>
@@ -226,6 +259,7 @@ const Diagnostic = ({navigation}) => {
                   ]}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                   value={data.doc_type}
                 />
                 <Text style={[styles.label, errors ? styles.errorLabel : null]}>
@@ -288,6 +322,7 @@ const Diagnostic = ({navigation}) => {
               nextBtnText="Siguiente"
               previousBtnText="Anterior"
               finishBtnText="Finalizar"
+              onSubmit={onSubmit}
               nextBtnTextStyle={buttonTextStyle}
               previousBtnTextStyle={buttonTextStyle}
               errors={errors}>
@@ -308,6 +343,7 @@ const Diagnostic = ({navigation}) => {
                   ]}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                   value={data.first}
                 />
                 <Text style={[styles.label, errors ? styles.errorLabel : null]}>
@@ -355,6 +391,7 @@ const Diagnostic = ({navigation}) => {
                   ]}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                   value={data.type}
                 />
                 <Text style={[styles.label, errors ? styles.errorLabel : null]}>
@@ -397,6 +434,7 @@ const Diagnostic = ({navigation}) => {
                   ]}
                   style={errors ? pickerSelectErrorStyles : pickerSelectStyles}
                   useNativeAndroidPickerStyle={false}
+                  fixAndroidTouchableBug={true}
                   value={data.contact}
                 />
               </View>

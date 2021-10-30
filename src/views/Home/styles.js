@@ -36,6 +36,9 @@ const panelStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },
+  slogan: {
+    textAlign: 'center',
+  }
 });
 
 export default panelStyles;

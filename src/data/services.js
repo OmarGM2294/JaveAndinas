@@ -136,8 +136,8 @@ const serviceData = (navigation) => [
           'procedimientos y la cultura de calidad que se ha implementado en la ' +
           'organización. La alternativa más factible es la de realizar la auditoría ' +
           'interna remota de calidad en las organizaciones. Por eso ' +
-          'JAVEANDINAS cuenta con profesionales certificados y con' +
-          'experiencia para llevar a cabo con calidad cada uno de los procesos a' +
+          'JAVEANDINAS cuenta con profesionales certificados y con ' +
+          'experiencia para llevar a cabo con calidad cada uno de los procesos a ' +
           'evaluar',
         images: [
           {
@@ -242,17 +242,16 @@ const serviceData = (navigation) => [
     colorText: colors.white,
     text: 'Salud',
     subservices: [
-      /*{
+      {
         id: 1,
-        press: () =>
-          navigation.push('Detail', {id: 3, type: 'subservice', sub: 1}),
-        icon: <IconF name="stethoscope" size={70} color={colors.white} />,
-        text: 'Visita medica',
+        press: () => navigation.push('Smile'),
+        icon: <IconF name="smile-o" size={70} color={colors.white} />,
+        text: 'Diagnostico JaveSonrisas',
         color: colors.fruit_salad,
         colorText: colors.white,
         description: '',
         images: [],
-      },*/
+      },
       {
         id: 2,
         press: () => navigation.push('Diagnostic'),

@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconM from 'react-native-vector-icons/MaterialIcons';
+import IconC from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {View, Image, Linking, TouchableOpacity} from 'react-native';
+import {View, Image, Linking, TouchableOpacity, Text} from 'react-native';
 
 import {colors} from '../../styles/base';
 
@@ -48,12 +49,18 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={viewStyles.main}>
       <View style={viewStyles.logoContainer}>
-        <Image
-          style={viewStyles.logo}
-          source={require('../../assets/img/logo.png')}
-        />
+        <View>
+          <Image
+            style={viewStyles.logo}
+            source={require('../../assets/img/logo.png')}
+          />
+          <Text style={viewStyles.slogan}>Ciencia y Tecnologia Para America</Text>
+        </View>
       </View>
       <View style={viewStyles.socialContainer}>
+        <TouchableOpacity onPress={() => openLink('https://www.javeandinas.com/')}>
+          <IconC name="web" size={40} color={colors.facebook} />
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => openLink('https://www.facebook.com/javeandinastutorias')}>
           <Icon name="facebook" size={40} color={colors.facebook} />
         </TouchableOpacity>

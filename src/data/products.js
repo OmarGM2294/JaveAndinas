@@ -165,13 +165,13 @@ const data = (navigation) => [
     colorText: colors.white,
     text: 'Diseño y desarrollo de maquinaria',
     description: 
-      'En Javeandinas nos especializamos en el diseño y desarrollo de\n' +
-      'maquinaria especializada o a nivel industrial, a medida de las\n' +
+      'En Javeandinas nos especializamos en el diseño y desarrollo de ' +
+      'maquinaria especializada o a nivel industrial, a medida de las ' +
       'necesidades de los procesos productivos de los clientes.\n\n' +
-      'En cada uno de nuestros procesos buscamos el éxito y la calidad para\n' +
-      'aquellos experimentos que se consideran poco posibles. Diseñándose\n' +
+      'En cada uno de nuestros procesos buscamos el éxito y la calidad para ' +
+      'aquellos experimentos que se consideran poco posibles. Diseñándose ' +
       'la solución de máquinas especiales requerida.\n\n' +
-      '¿Quieres conocer más en profundidad cuál es el proceso de diseño de\n' +
+      '¿Quieres conocer más en profundidad cuál es el proceso de diseño de ' +
       'maquinaria industrial de calidad que sigue nuestro equipo?',
     images: [
       {
@@ -299,16 +299,16 @@ const data = (navigation) => [
     colorText: colors.white,
     text: 'Montajes artisticos',
     description:
-      'La combinación de estas piezas claves como lo son, la ciencia,' +
-      'tecnología y arte. Nos ha llevado a dar un paso más allá de lo' +
-      'intangible, haciendo que cada uno de los proyectos personalizados' +
-      'enmarcados como montajes artísticos que combinan estas piezas claves' +
-      'lleven una marca fundamental representando la ciencia desde diversos' +
+      'La combinación de estas piezas claves como lo son, la ciencia, ' +
+      'tecnología y arte. Nos ha llevado a dar un paso más allá de lo ' +
+      'intangible, haciendo que cada uno de los proyectos personalizados ' +
+      'enmarcados como montajes artísticos que combinan estas piezas claves ' +
+      'lleven una marca fundamental representando la ciencia desde diversos ' +
       'ángulos.\n\n' +
-      'Los montajes artísticos, se diseñaron con el fin de dar cumplimiento a' +
-      'cada uno de las metas o sueños de nuestros clientes. Para así poder' +
-      'llevar a cabo la creación de un proyecto que en su momento se creía' +
-      'imposible, haciéndolo nosotros posible. Cada trabajo es personalizado.' +
+      'Los montajes artísticos, se diseñaron con el fin de dar cumplimiento a ' +
+      'cada uno de las metas o sueños de nuestros clientes. Para así poder ' +
+      'llevar a cabo la creación de un proyecto que en su momento se creía ' +
+      'imposible, haciéndolo nosotros posible. Cada trabajo es personalizado. ' +
       '¡En JAVEANDINAS todo lo hacemos posible!',
     images: [
       {
@@ -375,9 +375,9 @@ const data = (navigation) => [
       },
     ],
     description:
-      'Fabricación, envase, rotulado y acondicionamiento de productos de uso' +
-      'humano y veterinario cumpliendo con los requerimientos de Buenas' +
-      'Practicas de Manufactura y Buenas Practicas de Higiene, según el' +
+      'Fabricación, envase, rotulado y acondicionamiento de productos de uso ' +
+      'humano y veterinario cumpliendo con los requerimientos de Buenas ' +
+      'Practicas de Manufactura y Buenas Practicas de Higiene, según el ' +
       'informe 32 de la OMS.',
   },
   {
@@ -388,21 +388,21 @@ const data = (navigation) => [
     colorText: colors.white,
     text: 'Desinfectantes de uso hospitalario',
     description:
-      'Los desinfectantes actúan reduciendo y matando células bacterianas por' +
-      'desactivación de enzimas, hidrólisis, y oxidación, funcionando de forma' +
-      'más selectiva que los antisépticos. Debido a su alta toxicidad sólo se' +
+      'Los desinfectantes actúan reduciendo y matando células bacterianas por ' +
+      'desactivación de enzimas, hidrólisis, y oxidación, funcionando de forma ' +
+      'más selectiva que los antisépticos. Debido a su alta toxicidad sólo se ' +
       'pueden aplicar sobre materia inerte.\n\n' +
-      'Estos desinfectantes hospitalarios de uso común deben cumplir' +
-      'condiciones para servir contra un amplio espectro de microorganismos' +
-      'patógenos, deben ser asequibles a bajo coste, dadas las cantidades' +
-      'necesarias para efectuar la limpieza y desinfección en éste tipo de' +
-      'instalaciones de grandes dimensiones. Por lo cual deben actuar' +
-      'eficazmente en los más cortos espacios de tiempo y finalmente no pueden' +
-      'producir efectos tóxicos durante su uso o posteriormente por acción' +
-      'residual, pero sin embargo deben actuar incluso tiempo después de su' +
-      'aplicación, conservando sus propiedades. Por esto nosotros nos' +
-      'percatamos durante toda la cadena de producción cada uno de los puntos' +
-      'críticos de control de los desinfectantes garantizando la higienización' +
+      'Estos desinfectantes hospitalarios de uso común deben cumplir ' +
+      'condiciones para servir contra un amplio espectro de microorganismos ' +
+      'patógenos, deben ser asequibles a bajo coste, dadas las cantidades ' +
+      'necesarias para efectuar la limpieza y desinfección en éste tipo de ' +
+      'instalaciones de grandes dimensiones. Por lo cual deben actuar ' +
+      'eficazmente en los más cortos espacios de tiempo y finalmente no pueden ' +
+      'producir efectos tóxicos durante su uso o posteriormente por acción ' +
+      'residual, pero sin embargo deben actuar incluso tiempo después de su ' +
+      'aplicación, conservando sus propiedades. Por esto nosotros nos ' +
+      'percatamos durante toda la cadena de producción cada uno de los puntos ' +
+      'críticos de control de los desinfectantes garantizando la higienización ' +
       'y calidad de los productos hasta llegar a su destino final.',
     images: [
       {
@@ -427,22 +427,22 @@ const data = (navigation) => [
     color: colors.indigo,
     colorText: colors.white,
     description:
-      'Los textiles inteligentes son la combinación y el equilibrio entre la' +
-      'moda y la tecnología, la ciencia y el arte; los cuales juntos, permiten' +
-      'que el usuario interactúe con el entorno y sus sensaciones, dado que la' +
-      'variedad de materiales manejados perciben estímulos exteriores y' +
-      'reaccionan ante estos. En la última década se ha popularizando el' +
-      'concepto de “textiles inteligentes” (o smart textils, en inglés);' +
-      'puesto que cada vez se observa con más frecuencia, la incorporación de' +
-      'nanotecnología, sensores, circuitos eléctricos, y microcápsulas en las' +
-      'prendas de vestir, aumentando su funcionalidad, la conectividad' +
+      'Los textiles inteligentes son la combinación y el equilibrio entre la ' +
+      'moda y la tecnología, la ciencia y el arte; los cuales juntos, permiten ' +
+      'que el usuario interactúe con el entorno y sus sensaciones, dado que la ' +
+      'variedad de materiales manejados perciben estímulos exteriores y ' +
+      'reaccionan ante estos. En la última década se ha popularizando el ' +
+      'concepto de “textiles inteligentes” (o smart textils, en inglés); ' +
+      'puesto que cada vez se observa con más frecuencia, la incorporación de ' +
+      'nanotecnología, sensores, circuitos eléctricos, y microcápsulas en las ' +
+      'prendas de vestir, aumentando su funcionalidad, la conectividad ' +
       'interpersonal y la interacción ambiental.\n\n' +
-      'Todos estos conceptos en los que nuestras prendas de vestir cambian de' +
-      'color, desprenden aromas, son terapéuticas y poseen miles de' +
-      'características benéficas para el usuario, anteriormente eran' +
-      'concebidos como pensamientos futuristas; sin embargo, actualmente son' +
-      'una realidad gracias a la biotecnología y la nanotecnología aplicada a' +
-      'nuestras prendas, partiendo desde de uso industrial, militar, naval,' +
+      'Todos estos conceptos en los que nuestras prendas de vestir cambian de ' +
+      'color, desprenden aromas, son terapéuticas y poseen miles de ' +
+      'características benéficas para el usuario, anteriormente eran ' +
+      'concebidos como pensamientos futuristas; sin embargo, actualmente son ' +
+      'una realidad gracias a la biotecnología y la nanotecnología aplicada a ' +
+      'nuestras prendas, partiendo desde de uso industrial, militar, naval, ' +
       'médico y arquitectónico, hasta su apreciación en las pasarelas de moda.',
     images: [
       {
