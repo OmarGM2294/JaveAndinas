@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
   description: {
     color: colors.indigo,
     marginBottom: 0,
+    textAlign: 'justify',
   },
   textContainer: {
     backgroundColor: colors.white,

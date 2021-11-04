@@ -322,10 +322,10 @@ const Smile = ({navigation}) => {
               adquirir una buena imagen de diagnóstico.{'\n'}{'\n'}
               En caso dado de que el paciente presente dificultad al momento
               de tomar la foto, lo mejor sería que se tomase una radiografía
-              periapical de la zona afectada y hacer olas llegar por este
+              periapical de la zona afectada y hacer las llegar por este
               medio.{'\n'}{'\n'}
-              Finalmente, lo ideal es que el paciebte tenga a la mano o a
-              disposición  su juego fotográfico y de radiografias de las.zonas
+              Finalmente, lo ideal es que el paciente tenga a la mano o a
+              disposición  su juego fotográfico y de radiografias de las zonas
               afectadas, para así poder brindar una mejor consulta a su
               diagnóstico.{'\n'}{'\n'}
               Gracias.
